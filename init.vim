@@ -44,7 +44,7 @@ set statusline^=%{coc#status()}
 
 " basic setup
 set expandtab
-set tabstop=1
+set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set autoindent
@@ -63,3 +63,5 @@ colorscheme hybrid
 
 filetype plugin indent on
 syntax enable
+
+set clipboard=unnamedplus
