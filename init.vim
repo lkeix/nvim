@@ -36,7 +36,7 @@ if dein#load_state('$HOME/.cache/dein')
 endif
 
 if dein#check_install()
-"  call dein#install()
+  call dein#install()
 endif
 
 " coc log for status message
