@@ -36,7 +36,7 @@ if dein#load_state('$HOME/.cache/dein')
 endif
 
 if dein#check_install()
-"  call dein#install()
+  call dein#install()
 endif
 
 " coc log for status message
@@ -64,6 +64,7 @@ colorscheme hybrid
 :Fern . -drawer
 
 filetype plugin indent on
+<<<<<<< HEAD
 
 """ Fern
 let g:fern#default_hidden=1
@@ -71,3 +72,8 @@ let g:fern#default_hidden=1
 nnoremap <C-q> :Fern . -drawer<CR>
 
 """
+=======
+syntax enable
+
+set clipboard=unnamedplus
+>>>>>>> 4f3a42dcacfd63cf3e4c03da85903cf7540173fd
