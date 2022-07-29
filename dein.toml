@@ -4,6 +4,14 @@ source = 'release'
 build = 'coc#util#install()'
 
 [[plugins]]
+repo = 'neovim/nvim-lspconfig'
+hook_add = '''
+lua << EOF
+require'lspconfig'.gopls.setup{}
+EOF
+'''
+
+[[plugins]]
 repo = 'lambdalisue/fern.vim'
 
 
