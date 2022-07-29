@@ -44,7 +44,7 @@ set statusline^=%{coc#status()}
 
 " basic setup
 set expandtab
-set tabstop=1
+set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set autoindent
@@ -56,10 +56,18 @@ set guifont=Ricty:h14
 set showtabline=2
 set termguicolors
 set number
+syntax enable
 
 " theme setup
 set background=dark
 colorscheme hybrid
+:Fern . -drawer
 
 filetype plugin indent on
-syntax enable
+
+""" Fern
+let g:fern#default_hidden=1
+
+nnoremap <C-q> :Fern . -drawer<CR>
+
+"""

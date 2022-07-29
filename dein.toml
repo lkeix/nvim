@@ -3,3 +3,21 @@ repo = 'neoclide/coc.nvim'
 source = 'release'
 build = 'coc#util#install()'
 
+[[plugins]]
+repo = 'lambdalisue/fern.vim'
+
+
+[[plugins]]
+repo = 'yuki-yano/fern-preview.vim'
+repo = 'lambdalisue/fern-git-status.vim'
+repo = 'lambdalisue/fern-hijack.vim'
+
+# [[plugins]]
+# repo = 'fatih/vim-go'
+# hook_add = '''
+#  " 保存時に必要なimportを自動的に挿入
+#  let g:go_fmt_command = "goimports"
+#  " LSPに任せる機能をOFFにする
+#  let g:go_def_mapping_enabled = 0
+#  let g:go_doc_keywordprg_enabled = 0
+#'''
