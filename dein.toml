@@ -4,12 +4,21 @@ source = 'release'
 build = 'coc#util#install()'
 
 [[plugins]]
+repo = 'folke/tokyonight.nvim'
+source = 'main'
+
+[[plugins]]
 repo = 'neovim/nvim-lspconfig'
 hook_add = '''
 lua << EOF
 require'lspconfig'.gopls.setup{}
 EOF
 '''
+
+# Go
+[[plugins]]
+repo = 'nvim-lua/completion-nvim'
+
 
 [[plugins]]
 repo = 'lambdalisue/fern.vim'
@@ -20,6 +29,8 @@ repo = 'yuki-yano/fern-preview.vim'
 repo = 'lambdalisue/fern-git-status.vim'
 repo = 'lambdalisue/fern-hijack.vim'
 
+[[plugins]]
+repo = 'ayu-theme/ayu-vim'
 # [[plugins]]
 # repo = 'fatih/vim-go'
 # hook_add = '''
