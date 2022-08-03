@@ -40,8 +40,14 @@ repo = 'mattn/vim-lsp-settings'
 
 [[plugins]]
 repo = 'hrsh7th/vim-vsnip'
-repo = 'hrsh7th/vim-vsnip-integ'
 
+[[plugins]]
+repo = 'hrsh7th/vim-vsnip-integ'
+hook_add = '''
+lua << EOF
+require'lspconfig'.clangd.setup{on_attach = on_attach, capabilities = capabilities}
+EOF
+'''
 
 # Go
 [[plugins]]

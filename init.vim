@@ -97,10 +97,8 @@ filetype plugin indent on
 
 autocmd BufWritePre <buffer> LspDocumentFormatSync
 
-inoremap <expr><LF>  pumvisible() ? neocomplcache#close_popup() : "<LF>"
-inoremap <silent><expr> <LF> coc#pum#visible() ? coc#_select_confirm()
-                                \: "\<C-g>u\<LF>\<c-r>=coc#on_enter()\<LF>"
-
+inoremap <expr> <cr> coc#pum#visible() ? coc#_select_confirm() : "\<CR>"
+inoremap <silent><expr> <cr> coc#pum#visible() ? coc#_select_confirm()
+                                \: "\<C-g>u\<cr>\<c-r>=coc#on_enter()\<cr>"
 :NvimTreeToggle
 
-inoremap <expr> <c-y> pumvisible() ? "\<c-y>" : "\<c-x>\<c-o>\<c-y>"
