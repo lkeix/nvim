@@ -15,9 +15,40 @@ require'lspconfig'.gopls.setup{on_attach=require'completion'.on_attach}
 EOF
 '''
 
+# auto complete
+[[plugins]]
+repo = 'Shougo/neocomplete.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/vim-lsp'
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete-lsp.vim'
+
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+
+[[plugins]]
+repo = 'lighttiger2505/deoplete-vim-lsp'
+
+[[plugins]]
+repo = 'prabirshrestha/vim-lsp'
+repo = 'mattn/vim-lsp-settings'
+
+[[plugins]]
+repo = 'hrsh7th/vim-vsnip'
+repo = 'hrsh7th/vim-vsnip-integ'
+
+
 # Go
 [[plugins]]
 repo = 'nvim-lua/completion-nvim'
+
+[[plugins]]
+repo = 'mattn/vim-goimports'
 
 # File Explore
 [[plugins]]

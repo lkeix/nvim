@@ -28,6 +28,9 @@
 	"coc.preferences.formatOnSaveFiletypes": [
      "go"
   ],
+  "go.goplsOptions": {
+    "completeUnimported": true
+  },
   "languageserver": {
 		"terraform": {
 			"command": "terraform-ls",
